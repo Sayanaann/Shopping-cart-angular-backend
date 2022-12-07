@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
-import { Navbar1Component } from './navbar1/navbar1.component'
+import { Navbar1Component } from './navbar1/navbar1.component';
+import { ViewproductComponent } from './viewproduct/viewproduct.component'
 
 const myRoute:Routes=[
   {
@@ -29,6 +30,10 @@ const myRoute:Routes=[
   {
     path :"addproduct",
     component : AddproductComponent
+  },
+  {
+    path :"viewproduct",
+    component : ViewproductComponent
   }
   
 ]
@@ -41,7 +46,8 @@ const myRoute:Routes=[
     NavbarComponent,
     UserloginComponent,
     AddproductComponent,
-    Navbar1Component
+    Navbar1Component,
+    ViewproductComponent
   ],
   imports: [
     BrowserModule,
