@@ -21,7 +21,7 @@ let data : any ={  "username": this.username,
    
   if (this.username=="admin"&& this.password=="12345") {
      
-     this.route.navigate(['/viewallcourses'])
+     this.route.navigate(['/addproduct'])
     
     
   } else {
