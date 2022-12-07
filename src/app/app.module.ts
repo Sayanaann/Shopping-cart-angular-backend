@@ -8,7 +8,8 @@ import { UserregComponent } from './userreg/userreg.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import{HttpClientModule} from '@angular/common/http'
+import{HttpClientModule} from '@angular/common/http';
+import { UserloginComponent } from './userlogin/userlogin.component'
 
 const myRoute:Routes=[
   {
@@ -18,6 +19,10 @@ const myRoute:Routes=[
   {
     path :"userreg",
     component : UserregComponent
+  },
+  {
+    path :"userlogin",
+    component : UserloginComponent
   }
   
 ]
@@ -27,7 +32,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminloginComponent,
     UserregComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserloginComponent
   ],
   imports: [
     BrowserModule,
