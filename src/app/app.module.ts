@@ -13,7 +13,10 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { Navbar1Component } from './navbar1/navbar1.component';
 import { ViewproductComponent } from './viewproduct/viewproduct.component';
-import { SearchComponent } from './search/search.component'
+import { SearchComponent } from './search/search.component';
+import { ViewcartComponent } from './viewcart/viewcart.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
+import { Search2Component } from './search2/search2.component'
 
 const myRoute:Routes=[
   {
@@ -39,6 +42,14 @@ const myRoute:Routes=[
   {
     path :"searchproduct",
     component : SearchComponent
+  },
+  {
+    path :"searchproduct2",
+    component : Search2Component
+  },
+  {
+    path :"viewcart",
+    component : ViewcartComponent
   }
   
 ]
@@ -53,7 +64,10 @@ const myRoute:Routes=[
     AddproductComponent,
     Navbar1Component,
     ViewproductComponent,
-    SearchComponent
+    SearchComponent,
+    ViewcartComponent,
+    Navbar2Component,
+    Search2Component
   ],
   imports: [
     BrowserModule,
